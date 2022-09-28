@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+     <style>
+        #box{
+            width:35%;
+            margin:auto;
+        }
+        #box p{
+            color:#4a90e2;
+        }
+        #top{
+            width:80%;
+            display:flex;
+            justify-content: space-between;
+            margin:auto;
+        }
+        #email{
+            width:100%;
+            margin:auto;
+            height:30px;
+            margin-bottom: 30px;
+            margin-top: 10px;
+        }
+        #pass{
+            width:100%;
+            margin:auto;
+            height:30px;
+            margin-bottom: -10px;
+            
+        }
+        #form{
+            width:80%;
+            margin:auto;
+        }
+        #forgot{
+            text-align: end;
+            margin-bottom: 30px;
+        }
+        #login{
+            padding:10px 46%;
+            margin:auto;
+            border:0px;
+            color:white;
+            background-color: #4a90e2;
+        }
+        #otp{
+            text-align: center;
+            margin-bottom: 25px;
+        }
+        /* #google{
+            padding:10px 46%;
+            margin:auto;
+            border-radius: 20px;
+            border:0px;
+            color:grey;
+            box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+            
+        } */
+
+       
+     </style>
+</head>
+<body>
+    <div id="box">
+        <div id="top">
+            <h1>Login</h1>
+            <p>Register for free</p>
+        </div>
+        <div id="form">
+            <label for="">Email ID / Username</label>
+            <br>
+            <input type="text" id="email" placeholder="Enter your active Email ID / Username">
+            <br>
+            <label for="">Password</label>
+            <br>
+            <input type="text" id="pass" placeholder="Enter your password">
+            <br>
+            <p id="forgot">Forgot password?</p>
+            <button id="login">Login <a href="first.html"></a></button>
+            <p id="otp">Use OTP to Login</p>
+            <!-- <button id="google">Sign in with Google</button> -->
+        </div>
+    
+    </div>
+
+
+    <script>
+        let email=localStorage.getItem("Email");
+        let pass=localStorage.getItem("Password");
+
+        let inputemail=document.querySelector("#email").innerText;
+        let input_pass=document.querySelector("#pass").innerText;
+        console.log(inputemail);
+        console.log(input_pass);
+        document.querySelector("#login").addEventListener("click",Login);
+        
+        
+
+        function Login(event){
+            event.preventDefault();
+            if(inputemail==email && input_pass==pass){
+              window.open("first.html");
+              colsole.log("yes")
+            }else{
+                console.log("No");
+            }
+        }
+        
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <style>
+        body{
+            margin:0px;
+        }
+        #main{
+            display: flex;
+        }
+        #navbar{
+            display:flex;
+            width:100%;
+            height:65px;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 40px;
+            box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        }
+        #navbar>img{
+            width:14%;
+            height:45%;
+            margin-left: 30px;
+        }
+        #navbar>p{
+            margin-right: 30px;
+            color:#4b557d;
+        }
+        #navbar>p>a{
+            color:#4a90e2;
+            text-decoration: none;
+        }
+        #container{
+            width:30%;
+            margin-top: 70px;
+        }
+        #container>img{
+            margin-left: 35%; 
+        }
+        #container>div{
+            width:64%;
+            margin: auto;
+            border:1px dashed rgb(194, 194, 194);
+            border-radius: 20px;
+            padding:50px 30px 15px 30px;
+            margin-top: -15%;
+            box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+        }
+        #container ul li{
+            margin-bottom: 15px;
+            color:grey;
+        }    
+        #data_div{
+            width:45%;
+            margin-left: 7%;
+        }
+        #mail{
+            margin-bottom:25px;
+        }
+        #data_div input{
+            width:95%;
+            height:40px;
+            border:1px solid #d6dbeb;
+           margin-bottom: 25px;
+        }
+        form>p{
+            margin-top: -21px;
+            margin-bottom: 30px;
+            color:rgb(90, 89, 89);
+        }
+        #work{
+            width:100%;
+            display:flex;
+            justify-content: space-between;
+            margin-bottom: 40px;
+        }
+        #work>div{
+            width:48%;
+            display: flex;
+            border:1px solid #d6dbeb;
+            border-top-left-radius: 25px;
+            border-bottom-right-radius: 25px;
+            border-top-right-radius: 10px;
+            border-bottom-left-radius: 10px;  
+        }
+        #work>div img{
+            margin-top: 12px;
+            width:38px;
+            height:42px;
+        }
+        #work>div p{
+            margin-top: -12px;
+            color:#949dbd
+        }
+        #work>div h3{
+           color:#457eff;
+        }
+        #resume{
+            width:62%;
+            border:1px solid #d6dbeb;
+            color: #b9c3e2;
+            border-radius: 20px;
+            font-size: 13px;
+            margin-top: -20px;
+            margin-bottom: 30px;
+        }
+        #resume>button{
+            background-color: #ff7555;
+            color:white;
+            margin-right: 12px;
+            padding:10px 20px;
+            border-radius: 20px;
+            border:1px solid #ff7555;
+        }
+        #whatsapp{
+            display:flex;
+            width:70%;
+        }
+        #whatsapp>input{
+            width:15px;
+            margin-top:-5px;
+        }
+        #whatsapp img{
+            width:20px;
+            /* height:20px; */
+        }
+        #conditions{
+            font-size:small;
+        }
+        #conditions>span{
+            color:#457eff;
+        }
+        #register{
+            background-color:#457eff ;
+            color:white;
+            padding:11px 20px;
+            border:none;
+            font-size:medium ;
+            font-weight: bold;
+            border-radius: 20px;
+            margin-bottom: 70px;
+        }
+        #last{
+            text-align:center;
+            font-size: small;
+            margin-bottom: 100px;
+        }
+        #last>p:nth-child(1){
+            color:#457eff;
+        }
+        #last>p:nth-child(2){
+            text-align: center;
+            color:grey;
+            margin-top: -8px;
+        }
+        
+        
+        </style>
+</head>
+<body>
+    <div id="navbar">
+        <img src="https://static.naukimg.com/s/4/100/i/naukri_Logo.png" alt="">
+        <p>Already Registered? <a href="login.html">Login</a> here</p>
+        </div>
+        <div id="main">
+        <div id="container">
+            <img src="https://static.naukimg.com/s/7/104/assets/images/green-boy.c8b59289.svg" alt="">
+            <div>
+               
+               <h2>On registering, you can</h2>
+               <ul>
+                <li>Build your profile and let recruiters find you</li>
+                <li>Get job postings delivered right to your email</li>
+                <li>Find a job and grow your career</li>
+               </ul>
+            </div>
+        </div>
+        <div id="data_div">
+            <h1>Find a job & grow your career</h1>
+            <form >
+                <label for="">Full Name</label><br>
+                <input id="name" type="text" placeholder="What is your name?"><br>
+                <label  for="">Email id</label><br>
+                <input id="mail" type="email" placeholder="Tell us your Email ID"><br>
+                <p>We'll send you relevant jobs in your mail</p>
+                <label for="">Password</label><br>
+                <input id="pass" type="password" placeholder="Create password for your account"><br>
+                <p>Minimum 6 characters required</p>
+                <label for="">Mobile Number</label><br>
+                <input id="phone" type="number" placeholder="Mobile Number"><br>
+                <p>Recruiters will call you on this number</p>
+                <label for="">Work Status</label><br>
+                <div id="work">
+                    <div id="exp" value="experienced">
+                        <div>
+                        <img src="https://cdn-icons-png.flaticon.com/128/4283/4283324.png" alt="">
+                         </div>
+                    <div>
+                        <h3>I'm experienced</h3>
+                        <p>I have work experience (excluding internships)</p>
+                    </div>
+                    </div>
+                    <div id="fresher" value="Fresher">
+                        <div>
+                            <img src="https://cdn-icons-png.flaticon.com/128/4788/4788293.png" alt="">
+                        </div>
+                        <div>
+                        <h3>I'm a Fresher</h3>
+                        <p>I am a student/ Haven't worked after graduation</p>
+                       </div>
+                    </div>
+                </div>
+                <p>Resume</p>
+                <div id="resume"><button>Upload resume</button>DOC, DOCx, PDF, RTF | Max: 2 MB</div>
+                <p>Recruiters give first preference to candidates who have a resume</p>
+                <div id="whatsapp">
+                    <input type="checkbox" >
+                    <label for="send"> Send me Important updates On <img src="https://static.naukimg.com/s/7/104/assets/images/whatsappicon.0011d8c1.png" alt=""> Whatsapp</label>
+                </div>
+                <p id="conditions">By clicking Register, you agree to the <span id="terms">Terms and Conditions</span>  & <span id="policy" >Privacy Policy</span>  of Naukri.com </p>
+                <button id="register">Register Now</button>
+            </form>
+            <div id="last">
+                
+                <p>About Us | Contact Us | Terms and Conditions | Report a problem | Privacy Policy</p>
+                <p>All rights reserved 2022 Info India Ltd</p>
+               </div>
+        </div>
+    </div>
+    <script>
+           document.querySelector("form").addEventListener("submit",formdata);
+
+           document.querySelector("#exp").addEventListener("click",workexp);
+
+
+           document.querySelector("#fresher").addEventListener("click",Fresher);
+           function Fresher(){
+            event.preventDefault();
+            let fresh=document.querySelector("#fresher");
+            fresh.style.border="2px solid blue";
+           }
+
+           function workexp(event){
+             event.preventDefault();
+            let clr=document.querySelector("#exp");
+            clr.style.border = "2px solid blue";
+           }
+
+        //    if(document.querySelector("#name").innerText==""||document.querySelector("#mail").innerText==""||document.querySelector("#pass").innerText==""||document.querySelector("#phone").innerText==""){
+        //     alert("Please fill all the details");
+        //    }else{
+            function formdata(event){
+            event.preventDefault();
+               let name=document.querySelector("#name").value;
+               let email=document.querySelector("#mail").value;
+               let pass=document.querySelector("#pass").value;
+               let phone_no=document.querySelector("#phone").value;
+               let exp=document.querySelector("#work").value;
+
+               localStorage.setItem("Name",name);
+               localStorage.setItem("Email",email);
+               localStorage.setItem("Password",pass);
+               localStorage.setItem("Phone-no",phone_no);
+           }
+           
+
+           
+
+
+          
+    </script>
+</body>
+</html>
