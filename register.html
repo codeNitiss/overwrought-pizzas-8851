@@ -37,6 +37,8 @@
         #container{
             width:30%;
             margin-top: 70px;
+            background-color: #fafbfe;
+            height:1000px;
         }
         #container>img{
             margin-left: 35%; 
@@ -265,7 +267,17 @@
                localStorage.setItem("Email",email);
                localStorage.setItem("Password",pass);
                localStorage.setItem("Phone-no",phone_no);
+
+               alert("registerd successful");
+
+               document.querySelector("#name").value=null;
+               document.querySelector("#mail").value=null;
+               document.querySelector("#pass").value=null;
+               document.querySelector("#phone").value=null;
+               document.querySelector("#work").value=null;
+
            }
+        
            
 
            
