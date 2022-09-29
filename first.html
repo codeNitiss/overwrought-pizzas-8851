@@ -12,11 +12,11 @@
         #navbar{
             height:65px;
             width:100%;
-            
             display: flex;
             justify-content: space-between;
             align-items: center;
             box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+            position:sticky;
         }
         #navbar>img{
             width:13%;
@@ -64,6 +64,173 @@
             color:#4b557d;
             font-size: 18px;
         }
+        #heading{
+            width:80%;
+            margin:auto;
+            text-align:center;
+        }
+        #search{
+            border:1px solid #e1e7fd;
+            display: flex;
+            width:81%;
+            height:45px;
+            margin:auto;
+            padding:10px;
+            border-radius: 35px;
+            color:#7b85ad;
+            align-items: center;
+            box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        }
+        #search>img{
+            width:23px;
+            padding:10px;
+        }
+        #search span{
+            padding-right: 62px;
+        }
+        #search button{
+            padding: 15px 27px;
+            background-color: #457eff;
+            border-radius: 25px;
+            color:white ;
+            font-size: large;
+            font-weight: bold;
+            border: none;
+        }
+        #company{
+            width:80%;
+            margin:auto;
+            margin-top: 50px;
+            display:grid;
+            grid-template-columns: repeat(6,1fr);
+            gap:12px;
+        }
+        .anchor{
+            border:1px solid #e1e7fd;
+            border-bottom-right-radius: 15px;
+            border-bottom-left-radius: 5px;
+            border-top-right-radius: 5px;
+            border-top-left-radius: 15px;
+            align-items: center;
+            text-decoration: none;
+            color:black;
+            display: flex;
+            box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+        }
+        #company>a:hover{
+            box-shadow:#c3cbe9 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+        }
+        .anchor>img{
+            width:40px;
+            padding: 10px;
+        }
+        .anchor>p{
+            font-size:16px;
+            font-weight: bold;
+        }
+        #company-2{
+            width:70%;
+            margin:auto;
+            margin-top: 30px;
+            display:grid;
+            grid-template-columns: repeat(5,1fr);
+            gap:12px;
+        }
+        #company-2>a:hover{
+            box-shadow:#c3cbe9 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+        }
+        #hirecompany{
+            display:grid;
+            grid-template-columns: repeat(10,1fr);
+            gap:20px;
+            margin-left:8%;
+        }
+        .hire{
+            padding:15px;
+            border:1px solid #e1e7fd;
+            border-bottom-right-radius: 15px;
+            border-bottom-left-radius: 5px;
+            border-top-right-radius: 5px;
+            border-top-left-radius: 15px;
+            box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+        }
+         .hire p{
+            color:#7b85ad;
+            margin-top: -15px;
+            
+         }
+        #images{
+            display:flex;
+            gap:10px;
+        }
+        #images>img{
+            width:45px;
+            border:1px solid #e1e7fd;
+        }
+        .underline{
+            text-decoration: none;
+            color:black;
+        }
+        .hire:hover{
+            box-shadow:#c3cbe9 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+        }
+        .top{
+            text-align: center;
+            margin-top:70px;
+        }
+        #feature{
+            display:grid;
+            grid-template-columns: repeat(10,1fr);
+            gap:20px;
+            margin-left:8%;
+            text-align: center;
+            margin-top: 40px;
+        }
+        .feat-box{
+            padding:15px;
+            border:1px solid #e1e7fd;
+            border-bottom-right-radius: 15px;
+            border-bottom-left-radius: 5px;
+            border-top-right-radius: 5px;
+            border-top-left-radius: 15px;
+            box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+        }
+        .rate-box{
+            padding:5px 15px;
+            text-align: center;
+            align-items: center;
+            background-color: #f8f8f9;
+            border-bottom-right-radius: 15px;
+            border-bottom-left-radius: 5px;
+            border-top-right-radius: 5px;
+            border-top-left-radius: 15px;
+        }
+        .feat-box:hover{
+            box-shadow:#c3cbe9 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+        }
+        .feat-box p{
+            color:#7b85ad;
+        }
+        .feat-box button{
+            color:#5388ff;
+            background-color: #f1f5ff;
+            padding:10px 20px;
+            border: none;
+            border-radius: 20px;
+            font-weight: bold;
+        }
+        .rate-box>p{
+           font-size:20px;
+           color:rgb(34, 34, 34)
+        }
+        .rating{
+            display:flex;
+            width:170px;
+            color:grey;
+            justify-content: center;
+            align-items: center;
+            margin-top: -37px;
+        }
 
 
     </style>
@@ -83,31 +250,342 @@
             <div>For employers </div>
         </div>
     </div>
-    <div>
-        <button></button>
-        <button></button>
-        <button></button>
-        <button></button>
-        <button></button>
-        <button></button>
+    <div id="heading">
+        <h1>Find your dream job now</h1>
+        <p>5 lakh+ jobs for you to explore</p>
+        <div id="search">
+            <img src="https://static.naukimg.com/s/7/103/i/search.9ec0e1ac.svg" alt="">
+            <p><span>Enter Skills/ designation / companies </span> <span>| Select Experience </span> <span>| Enter Location </span>     <Button>Search</Button></p>
+        </div> 
     </div>
-    <div></div>
+    <div id="company">
+        <a class="anchor" href="https://www.naukri.com/remote-jobs?src=discovery_trendingWdgt_homepage_srch">
+            <img src="https://static.naukimg.com/s/0/0/i/trending-naukri/remote.svg" alt="">
+            <p>Remote  ></p>
+        </a>
+        <a class="anchor" href="https://www.naukri.com/mnc-jobs?src=discovery_trendingWdgt_homepage_srch">
+            <img src="https://static.naukimg.com/s/0/0/i/trending-naukri/mnc.svg" alt="">
+            <p>MNC  ></p>
+        </a>
+        <a class="anchor" href="https://www.naukri.com/it-jobs?src=discovery_trendingWdgt_homepage_srch">
+            <img src="https://static.naukimg.com/s/0/0/i/trending-naukri/software.svg" alt="">
+            <p>Software.. ></p>
+        </a>
+        <a class="anchor" href="https://www.naukri.com/work-from-home-jobs?src=discovery_trendingWdgt_homepage_srch">
+            <img src="https://static.naukimg.com/s/0/0/i/trending-naukri/temporary-wfh.svg" alt="">
+            <p>Temp WFH  ></p>
+        </a>
+        <a class="anchor" href="https://www.naukri.com/engineering-jobs?src=discovery_trendingWdgt_homepage_srch">
+            <img src="https://static.naukimg.com/s/0/0/i/trending-naukri/engineering.svg" alt="">
+            <p>Enginneri..  ></p>
+        </a>
+        <a class="anchor" href="https://www.naukri.com/bfsi-jobs?src=discovery_trendingWdgt_homepage_srch">
+            <img src="https://static.naukimg.com/s/0/0/i/trending-naukri/finance.svg" alt="">
+            <p>Banking   ></p>
+        </a>
+    </div>
+    <div id="company-2">
+       <a class="anchor" href="https://www.naukri.com/fresher-jobs?src=discovery_trendingWdgt_homepage_srch">
+        <img src="https://static.naukimg.com/s/0/0/i/trending-naukri/freshers.svg" alt="">
+        <p>Fresher ></p>
+       </a>
+       <a class="anchor" href="https://www.naukri.com/project-management-jobs?src=discovery_trendingWdgt_homepage_srch">
+        <img src="https://static.naukimg.com/s/0/0/i/trending-naukri/project-management.svg" alt="">
+        <p>Project Mg.. ></p>
+       </a>
+       <a class="anchor" href="https://www.naukri.com/hr-jobs?src=discovery_trendingWdgt_homepage_srch">
+        <img src="https://static.naukimg.com/s/0/0/i/trending-naukri/hr.svg" alt="">
+        <p>HR ></p>
+       </a>
+       <a class="anchor" href="https://www.naukri.com/marketing-jobs?src=discovery_trendingWdgt_homepage_srch">
+        <img src="https://static.naukimg.com/s/0/0/i/trending-naukri/marketing.svg" alt="">
+        <p>Marketing ></p>
+       </a>
+       <a class="anchor" href="https://www.naukri.com/sales-jobs?src=discovery_trendingWdgt_homepage_srch">
+        <img src="https://static.naukimg.com/s/0/0/i/trending-naukri/sales.svg" alt="">
+        <p>Sales ></p>
+       </a> 
+    </div>  
+    <h1 class="top">Top companies hiring now</h1>
+    <div id="hirecompany">
+        
+        <div class="hire" >
+            <a class="underline" href="https://www.naukri.com/allcompanies?qcbusinessSize=213&qcbusinessSize=217&categoryId=101&title=MNCs+actively+hiring&pageNo=1&qcount=48&src=discovery_orgExploreCompanies_homepage_srch&searchType=companySearch">
+                <h3 >MNCs ></h3>
+                <p>1.3K+are actively hiring</p>
+            
+                <div id="images">
+                    <img src="https://img.naukimg.com/logo_images/groups/v1/4616605.gif" alt="">
+                    <img src="https://img.naukimg.com/logo_images/groups/v1/4633875.gif" alt="">
+                    <img src="https://img.naukimg.com/logo_images/groups/v1/4666325.gif" alt="">
+                    <img src="https://img.naukimg.com/logo_images/groups/v1/386732.gif" alt="">
+                </div>
+            </a>
+        </div>
+    
+        <div class="hire">
+            <a class="underline" href="https://www.naukri.com/allcompanies?qccompanyIndustry=148&qccompanyIndustry=149&qccompanyIndustry=150&qccompanyIndustry=151&qccompanyIndustry=152&qccompanyIndustry=153&qccompanyIndustry=154&qccompanyIndustry=155&qccompanyIndustry=156&qccompanyIndustry=157&qccompanyIndustry=158&qccompanyIndustry=159&qccompanyIndustry=160&qccompanyIndustry=161&categoryId=112&title=Manufacturing+companies+actively+hiring&pageNo=1&qcount=48&src=discovery_orgExploreCompanies_homepage_srch&searchType=companySearch">
+                <h3>Fintech ></h3>
+                <p>104 are actively hiring</p>
+                <div id="images">
+                    <img src="https://img.naukimg.com/logo_images/groups/v1/1302864.gif" alt="">
+                    <img src="https://img.naukimg.com/logo_images/groups/v1/3434808.gif" alt="">
+                    <img src="https://img.naukimg.com/logo_images/groups/v1/306162.gif" alt="">
+                    <img src="https://img.naukimg.com/logo_images/groups/v1/718384.gif" alt="">
+                </div>
+            </a>
+        </div>
+        <div class="hire">
+            <a class="underline" href="https://www.naukri.com/allcompanies?qccustomTag=247&categoryId=115&title=Fortune+500+actively+hiring&pageNo=1&qcount=48&src=discovery_orgExploreCompanies_homepage_srch&searchType=companySearch">
+                <h3>FMCG & Retail ></h3>
+                <p>32 are actively hiring</p>
+                <div id="images">
+                    <img src="https://img.naukimg.com/logo_images/groups/v1/26216.gif" alt="">
+                    <img src="https://img.naukimg.com/logo_images/groups/v1/245200.gif" alt="">
+                    <img src="https://img.naukimg.com/logo_images/groups/v1/3867866.gif" alt="">
+                    <img src="https://img.naukimg.com/logo_images/groups/v1/147040.gif" alt="">
+                </div>
+            </a>
+        </div>
+        <div class="hire">
+            <a class="underline" href="https://www.naukri.com/allcompanies?qccompanyIndustry=107&qccompanyIndustry=108&qccompanyIndustry=110&qccompanyIndustry=114&qccompanyIndustry=134&qccompanyIndustry=176&qccompanyIndustry=105&categoryId=106&title=Product+companies+actively+hiring&pageNo=1&qcount=48&src=discovery_orgExploreCompanies_homepage_srch&searchType=companySearch">
+                <h3>Startups ></h3>
+                <p>132 are actively hiring</p>
+                <div id="images">
+                    <img src="https://img.naukimg.com/logo_images/groups/v1/1830172.gif" alt="">
+                    <img src="https://img.naukimg.com/logo_images/groups/v1/2593398.gif" alt="">
+                    <img src="https://img.naukimg.com/logo_images/groups/v1/5007222.gif" alt="">
+                    <img src="https://img.naukimg.com/logo_images/groups/v1/2520978.gif" alt="">
+                </div>
+            </a>
+        </div>
+        <div class="hire">
+            <a class="underline" href="https://www.naukri.com/allcompanies?qcbusinessSize=213&qcbusinessSize=217&categoryId=101&title=MNCs+actively+hiring&pageNo=1&qcount=48&src=discovery_orgExploreCompanies_homepage_srch&searchType=companySearch">
+                <h3>Edtech ></h3>
+                <p>138 are actively hiring</p>
+                <div id="images">
+                    <img src="https://img.naukimg.com/logo_images/groups/v1/4264086.gif" alt="">
+                    <img src="https://img.naukimg.com/logo_images/groups/v1/4782899.gif" alt="">
+                    <img src="https://img.naukimg.com/logo_images/groups/v1/3248720.gif" alt="">
+                    <img src="https://img.naukimg.com/logo_images/groups/v1/204166.gif" alt="">
+                </div>
+            </a>
+        </div>
+        <div class="hire">
+            <a class="underline" href="https://www.naukri.com/allcompanies?qcbusinessSize=213&qcbusinessSize=217&categoryId=101&title=MNCs+actively+hiring&pageNo=1&qcount=48&src=discovery_orgExploreCompanies_homepage_srch&searchType=companySearch">
+                <h3>Healthcare ></h3>
+                <p>107 are actively hiring</p>
+                <div id="images">
+                    <img src="https://img.naukimg.com/logo_images/groups/v1/552300.gif" alt="">
+                    <img src="https://img.naukimg.com/logo_images/groups/v1/2192.gif" alt="">
+                    <img src="https://img.naukimg.com/logo_images/groups/v1/4191920.gif" alt="">
+                    <img src="https://img.naukimg.com/logo_images/groups/v1/2948968.gif" alt="">
+                </div>
+            </a>
+        </div>
+        <div class="hire">
+            <a class="underline" href="https://www.naukri.com/allcompanies?qcbusinessSize=213&qcbusinessSize=217&categoryId=101&title=MNCs+actively+hiring&pageNo=1&qcount=48&src=discovery_orgExploreCompanies_homepage_srch&searchType=companySearch">
+                <h3>Unicorns ></h3>
+                <p>88 are actively hiring</p>
+                <div id="images">
+                    <img src="https://img.naukimg.com/logo_images/groups/v1/4628571.gif" alt="">
+                    <img src="https://img.naukimg.com/logo_images/groups/v1/2431448.gif" alt="">
+                    <img src="https://img.naukimg.com/logo_images/groups/v1/5729808.gif" alt="">
+                    <img src="https://img.naukimg.com/logo_images/groups/v1/1081022.gif" alt="">
+                </div>
+            </a>
+        </div>
+        <div class="hire">
+            <a class="underline" href="https://www.naukri.com/allcompanies?qcbusinessSize=213&qcbusinessSize=217&categoryId=101&title=MNCs+actively+hiring&pageNo=1&qcount=48&src=discovery_orgExploreCompanies_homepage_srch&searchType=companySearch">
+                <h3>B2C ></h3>
+                <p>946 are actively hiring</p>
+                <div id="images">
+                    <img src="https://img.naukimg.com/logo_images/groups/v1/222216.gif" alt="">
+                    <img src="https://img.naukimg.com/logo_images/groups/v1/555040.gif" alt="">
+                    <img src="https://img.naukimg.com/logo_images/groups/v1/4622119.gif" alt="">
+                    <img src="https://img.naukimg.com/logo_images/groups/v1/109516.gif" alt="">
+                </div>
+            </a>
+        </div>
+        <div class="hire">
+            <a class="underline" href="https://www.naukri.com/allcompanies?qcbusinessSize=213&qcbusinessSize=217&categoryId=101&title=MNCs+actively+hiring&pageNo=1&qcount=48&src=discovery_orgExploreCompanies_homepage_srch&searchType=companySearch">
+                <h3>Internet ></h3>
+                <p>130 are actively hiring</p>
+                <div id="images">
+                    <img src="https://img.naukimg.com/logo_images/groups/v1/992070.gif" alt="">
+                    <img src="https://img.naukimg.com/logo_images/groups/v1/4584167.gif" alt="">
+                    <img src="https://img.naukimg.com/logo_images/groups/v1/4961339.gif" alt="">
+                    <img src="https://img.naukimg.com/logo_images/groups/v1/2593398.gif" alt="">
+                </div>
+            </a>
+        </div>
+    </div>
+         <h1 class="top">Featured companies actively hiring</h1>
+        <div id="feature">
+            <div class="feat-box">
+            <a class="underline" href="">
+                <img src="https://img.naukimg.com/logo_images/groups/v2/1744734.gif" alt="">
+                <div class="rate-box">
+                    <p>Luxoft</p>
+                    <div class="rating" >
+                        <img src="https://static.naukimg.com/s/7/0/assets/images/node_modules/@naukri-ui-dev/premiumstandardads/component/assets/star.0f830ab5.svg" alt="">
+                        <h4> 4.4 </h4>
+                        <p> | 221 reviews</p>
+                    </div>
+                </div>
+                <p>DXC Technology Company</p>
+                <button>View Jobs</button>
+            </a>
+           </div>
+           <div class="feat-box">
+            <a class="underline" href="https://www.naukri.com/accolite-digital-overview-4577755">
+                <img src="https://img.naukimg.com/logo_images/groups/v2/4577755.gif" alt="">
+                <div class="rate-box">
+                    <p>Accolite Digital</p>
+                    <div class="rating" >
+                        <img src="https://static.naukimg.com/s/7/0/assets/images/node_modules/@naukri-ui-dev/premiumstandardads/component/assets/star.0f830ab5.svg" alt="">
+                        <h4> 3.9 </h4>
+                        <p> | 299 reviews </p>
+                    </div>
+                </div>
+                <p>Digital transformation services provider.</p>
+                <button>View Jobs</button>
+            </a>
+           </div>
+           <div class="feat-box">
+            <a class="underline" href="https://www.naukri.com/biz2credit-overview-4582763">
+                <img src="https://img.naukimg.com/logo_images/groups/v2/4582763.gif" alt="">
+                <div class="rate-box">
+                    <p>Biz2Credit</p>
+                    <div class="rating" >
+                        <img src="https://static.naukimg.com/s/7/0/assets/images/node_modules/@naukri-ui-dev/premiumstandardads/component/assets/star.0f830ab5.svg" alt="">
+                        <h4>4.4</h4>
+                        <p> | 171 reviews </p>
+                    </div>
+                </div>
+                <p>Leading the #Fintech Revolution.</p>
+                <button>View Jobs</button>
+            </a>
+           </div>
+           <div class="feat-box">
+            <a class="underline" href="https://www.naukri.com/oracle-overview-18850">
+                <img src="https://img.naukimg.com/logo_images/groups/v2/18850.gif" alt="">
+                <div class="rate-box">
+                    <p>Oracle</p>
+                    <div class="rating" >
+                        <img src="https://static.naukimg.com/s/7/0/assets/images/node_modules/@naukri-ui-dev/premiumstandardads/component/assets/star.0f830ab5.svg" alt="">
+                        <h4>3.9</h4>
+                        <p> | 3.9K+reviews</p>
+                    </div>
+                </div>
+                <p>Cloud technology company since 1977.</p>
+                <button>View Jobs</button>
+            </a>
+           </div>
+           <div class="feat-box">
+            <a class="underline" href="https://www.naukri.com/fis-overview-21746">
+                <img src="https://img.naukimg.com/logo_images/groups/v2/21746.gif" alt="">
+                <div class="rate-box">
+                    <p>FIS</p>
+                    <div class="rating" >
+                        <img src="https://static.naukimg.com/s/7/0/assets/images/node_modules/@naukri-ui-dev/premiumstandardads/component/assets/star.0f830ab5.svg" alt="">
+                        <h4>4.1</h4>
+                        <p> | 3.5K+ reviews</p>
+                    </div>
+                </div>
+                <p>FIS is hiring 3 to 10yrs exp.in c++ & Mumps developer</p>
+                <button>View Jobs</button>
+            </a>
+           </div>
+           <div class="feat-box">
+            <a class="underline" href="https://www.naukri.com/genpact-overview-42932">
+                <img src="https://img.naukimg.com/logo_images/groups/v2/42932.gif" alt="">
+                <div class="rate-box">
+                    <p>Genpact</p>
+                    <div class="rating" >
+                        <img src="https://static.naukimg.com/s/7/0/assets/images/node_modules/@naukri-ui-dev/premiumstandardads/component/assets/star.0f830ab5.svg" alt="">
+                        <h4>4.0</h4>
+                        <p> | 20.5K+ reviews</p>
+                    </div>
+                </div>
+                <p>Global professional services firm.</p>
+                <button>View Jobs</button>
+            </a>
+           </div>
+           <div class="feat-box">
+            <a class="underline" href="https://www.naukri.com/icici-bank-overview-44512">
+                <img src="https://img.naukimg.com/logo_images/groups/v2/44512.gif" alt="">
+                <div class="rate-box">
+                    <p>ICICI Bank</p>
+                    <div class="rating" >
+                        <img src="https://static.naukimg.com/s/7/0/assets/images/node_modules/@naukri-ui-dev/premiumstandardads/component/assets/star.0f830ab5.svg" alt="">
+                        <h4>4.0</h4>
+                        <p> | 34.1K+ reviews</p>
+                    </div>
+                </div>
+                <p>Leading private sectors bank in India.</p>
+                <button>View Jobs</button>
+            </a>
+           </div>
+           <div class="feat-box">
+            <a class="underline" href="https://www.naukri.com/cognizant-overview-4156">
+                <img src="https://img.naukimg.com/logo_images/groups/v2/4156.gif" alt="">
+                <div class="rate-box">
+                    <p>Cognizat</p>
+                    <div class="rating" >
+                        <img src="https://static.naukimg.com/s/7/0/assets/images/node_modules/@naukri-ui-dev/premiumstandardads/component/assets/star.0f830ab5.svg" alt="">
+                        <h4>3.9</h4>
+                        <p> | 28.8K+ reviews</p>
+                    </div>
+                </div>
+                <p>Leading ITes Company with global presence</p>
+                <button>View Jobs</button>
+            </a>
+           </div>
+           <div class="feat-box">
+            <a class="underline" href="https://www.naukri.com/incedo-overview-1527726">
+                <img src="https://img.naukimg.com/logo_images/groups/v2/1527726.gif" alt="">
+                <div class="rate-box">
+                    <p>Incedo</p>
+                    <div class="rating" >
+                        <img src="https://static.naukimg.com/s/7/0/assets/images/node_modules/@naukri-ui-dev/premiumstandardads/component/assets/star.0f830ab5.svg" alt="">
+                        <h4>4.0</h4>
+                        <p> | 400 reviews</p>
+                    </div>
+                </div>
+                <p> US-based consulting & technology services firm.</p>
+                <button>View Jobs</button>
+            </a>
+           </div>
+           <div class="feat-box">
+            <a class="underline" href="naukri.com/bharti-airtel-overview-126896">
+                <img src="https://img.naukimg.com/logo_images/groups/v2/126896.gif" alt="">
+                <div class="rate-box">
+                    <p>Bharti Airtel</p>
+                    <div class="rating" >
+                        <img src="https://static.naukimg.com/s/7/0/assets/images/node_modules/@naukri-ui-dev/premiumstandardads/component/assets/star.0f830ab5.svg" alt="">
+                        <h4>4.1</h4>
+                        <p> | 12.6K+ reviews</p>
+                    </div>
+                </div>
+                <p>Leading global telecom company.</p>
+                <button>View Jobs</button>
+            </a>
+           </div>
+        </div>
+
+           
 
 
     <script>
-        // document.querySelector("#login").addEventListener("click",Login);
+        //  document.querySelector(".hire").addEventListener("click",hiring);
 
-        // function Login(event){
-        //     event.preventDefault();
-        //     window.open("login.html")
-        // }
+        //  function hiring(event) {
+        //        event.preventDefualt();
+        //         window.open("https://www.naukri.com/allcompanies?qcbusinessSize=213&qcbusinessSize=217&categoryId=101&title=MNCs+actively+hiring&pageNo=1&qcount=48&src=discovery_orgExploreCompanies_homepage_srch&searchType=companySearch");
+        //  }
 
-        // document.querySelector("#regis").addEventListener("click",Register);
-
-        // function Register(event){
-        //     event.preventDefault();
-        //     window.open("register.html")
-        // }
+        
 
     </script>
     
