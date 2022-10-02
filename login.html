@@ -82,7 +82,7 @@
             <input type="text" id="pass" placeholder="Enter your password">
             <br>
             <p id="forgot">Forgot password?</p>
-            <button id="login">Login <a href="first.html"></a></button>
+            <button id="login">Login <a href="index.html"></a></button>
             <p id="otp">Use OTP to Login</p>
             <!-- <button id="google">Sign in with Google</button> -->
         </div>
@@ -91,21 +91,24 @@
 
 
     <script>
+        
         let email=localStorage.getItem("Email");
         let pass=localStorage.getItem("Password");
-
-        let inputemail=document.querySelector("#email").innerText;
-        let input_pass=document.querySelector("#pass").innerText;
-        console.log(inputemail);
-        console.log(input_pass);
+        
+        // console.log(inputemail);
+        // console.log(input_pass);
         document.querySelector("#login").addEventListener("click",Login);
         
         
 
         function Login(event){
             event.preventDefault();
+        
+
+            let inputemail=document.querySelector("#email").value;
+            let input_pass=document.querySelector("#pass").value;
             if(inputemail==email && input_pass==pass){
-              window.open("first.html");
+              window.location.href="index.html";
               colsole.log("yes")
             }else{
                 console.log("No");
