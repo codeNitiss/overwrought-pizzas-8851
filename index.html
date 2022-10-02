@@ -76,6 +76,10 @@
         #heading>h1{
             font-size: 38px;
         }
+        #heading>p{
+            color:#a3a3a5;
+            margin-top:-15px;
+        }
         #search{
             border:1px solid #e1e7fd;
             display: flex;
@@ -669,47 +673,106 @@
         width:90%;
         display:flex;
         margin:auto;
-        border:1px solid blue;
         background-color:#f7f8ff;
         border-radius: 15px 5px 15px 5px;
        }
        #video-profile>div{
         margin:5%;
-        width:35%;
+        width:40%;
+       }
+       #link-head{
+        width:90%;
        }
        #get-link{
-        width:70%;
+        width:100%;
+        display:flex;
+        margin-top:-20px;
        }
-       #get-link>input{
-        width:70%;
-        height:25px;
-        
+       
+       #scanner{
+        width:30%;
+        text-align: center;
+        background-color: white;
+        border-radius: 7px;
        }
-       #get-link>button{
-        width:25%;
-        padding:6px;
-        background-color: #457eff;
-        border:none;
-        color:white;
-        border-radius: 15px;
+       #scanner>img{
+        width:90%;
+        margin-top: 10px;
        }
+       #scanner>p{
+        font-size: small;
+        margin-top: -4px;
+        color:#9a9eab;
+       }
+       #get-link>div:nth-child(1){
+        width:90%;
+       } 
        #download{
         margin-top:20px;
        }
-       #scanner{
-        border:1px solid green;
-        padding-left: -40%;
+       #get-link input{
+        width:60%;
+        height:25px;
        }
-       #scanner>img{
-        width:25%;
+       #get-link button{
+        width:20%;
+        padding: 5px;background-color: #457eff;
+        color:white;
+        border:none;
+        border-radius: 15px;
        }
-       #scan-div{
+       #video-profile>img{
+        width:50%;
+        height:90%;
+       }
+       #end{
+        margin-top: 25px;
+        width:100%;
+        border-bottom: 5px solid #eaf1f5;
+       }
+       #bottom{
+        width: 95%;
         display:flex;
-        margin:1px solid red;
+        margin:auto;
+        margin-top: 30px;
+        align-items: center;
+        padding:3% 0%;
+        border-bottom: 2px solid #eaf1f5;;
        }
-
-
-
+       #connect{
+        width:20%;
+       }
+       #connect>p{
+        color:#9a9ca1;
+        margin-top:30px;
+       }
+       #social-media>img{
+        margin-right: 10px;
+       }
+       .about{
+        width:12%;
+        margin-right: 3%;
+       }
+       .about a{
+        text-decoration: none;
+        color:black;
+        font-size: medium;
+        margin-top: -6px;
+       }
+       .about a:hover{
+        color:#457eff
+       }
+       #apply{
+        width:30%;
+        border:1px solid #e1e7fd;
+        border-radius: 5px;
+        padding-left:20px;
+        padding-bottom: 20px;
+       }
+       #apply>p{
+        margin-top:-5%;
+       }
+       
 
     </style>
 </head>
@@ -725,7 +788,7 @@
         <div id="icon-2">  
              <a id="login" href="login.html">Login </a>
             <a id="regis" href="register.html">Register</a>
-            <div>For employers </div>
+            <div>For employers <span>˅</span></div>
         </div>
     </div>
     <div id="heading">
@@ -1554,27 +1617,79 @@
         </div>
         <div id="video-profile">
             <div>
-                <h1>Stand out among recruiters with a video profile</h1>
+                <div id="link-head">
+                    <h1>Stand out among recruiters with a video profile</h1>
+                </div>
                 <div id="get-link">
-                <p>Available for both Android & iOS apps</p>
-                <input type="number" placeholder="Enter mobile number..."  >
-                <button>Get-Link</button>
-               </div >
-                <div id="download">
-                <a href="https://play.google.com/store/apps/details?id=naukriApp.appModules.login&hl=en_IN&utm_source=desktop_homepage&utm_campaign=widget">
-                <img src="https://static.naukimg.com/s/0/0/i/download-app-link/Gplay.png" alt="">
-                </a>
-                <a href="https://apps.apple.com/in/app/naukri-com-job-search/id482877505?utm_source=desktop_homepage&utm_campaign=widget">
-                <img src="https://static.naukimg.com/s/0/0/i/download-app-link/Appstore.png" alt="">
-                </a>
-               </div>
-              
+                    <div>
+                        <div>
+                        <p>Available for both Android and iOS apps</p>
+                        <input type="text" placeholder="Enter mobile number..">
+                        <button>Get Link</button>
+                        </div>
+                        <div id="download">
+                        <a href="https://play.google.com/store/apps/details?id=naukriApp.appModules.login&hl=en_IN&utm_source=desktop_homepage&utm_campaign=widget">
+                            <img src="https://static.naukimg.com/s/0/0/i/download-app-link/Gplay.png" alt="">
+                            </a>
+                            <a href="https://apps.apple.com/in/app/naukri-com-job-search/id482877505?utm_source=desktop_homepage&utm_campaign=widget">
+                            <img src="https://static.naukimg.com/s/0/0/i/download-app-link/Appstore.png" alt="">
+                            </a>
+                        </div>
+                    </div>
+                    <div id="scanner">
+                        <img src="https://static.naukimg.com/s/0/0/i/download-app-link/qr-code.svg" alt="">
+                        <p>scan to download</p>
+                    </div>
+                </div>
+
             </div>
-            <div id="scanner">
-                <img src="https://static.naukimg.com/s/0/0/i/download-app-link/qr-code.svg" alt="">
-                 </div>
-            
+            <img src="https://static.naukimg.com/s/0/0/i/download-app-link/MaskGroup_v4.png" alt="">
         </div>
+        <div id="end"></div>
+        <div id="bottom">
+            <div id="connect">
+                <img src="https://static.naukimg.com/s/4/100/i/naukri_Logo.png" alt="">
+                <p>Connect with us</p>
+                <div id="social-media">
+                        <img id="facebook" src="https://static.naukimg.com/s/0/0/i/new-homepage/facebook.svg" alt="">                
+                        <img id="insta" src="https://static.naukimg.com/s/0/0/i/new-homepage/instagram.svg" alt="">                   
+                        <img  id="twiter" src="https://static.naukimg.com/s/0/0/i/new-homepage/twitter.svg" alt="">  
+                        <img id="linkedin" src="https://static.naukimg.com/s/0/0/i/new-homepage/linkedin.svg" alt="">
+                </div>
+            </div>
+            <div class="about">
+              <a href="http://infoedge.in/"><p>About us</p> </a>
+              <a href="http://careers.infoedge.in/"><p>Careers</p> </a>
+              <a href="https://www.naukri.com/recruit/login"><p>Employer home</p> </a>
+              <a href="https://www.naukri.com/sitemap/sitemap.php"><p>Site map</p> </a>
+            </div>
+            <div class="about">
+                <a href="https://www.naukri.com/faq/job-seeker?utm_source=footer"><p>Help center</p></a>
+                <a href="https://w5.naukri.com/summons-notices-form/"><p>Summons/Notices</p></a>
+                <a href="https://w5.naukri.com/grievances-form/"><p>Grievances</p></a>
+                <a href="https://w5.naukri.com/fdbck/main/feedback.php?app_id=15"><p>Report issue</p></a>
+            </div>
+            <div class="about">
+                
+                <a href="https://www.naukri.com/privacypolicy"><p>Privacy policy</p></a>
+                <a href="https://www.naukri.com/termsconditions"><p>Terms & conditions</p></a>
+                <a href="https://www.naukri.com/imposter/report-fake-job-recruiter"><p>Fraud alert</p></a>
+                <a href="https://www.naukri.com/jobsearch/trust-safety"><p>Trust & safety</p></a>
+            </div>
+            <div id="apply">
+                <h4>Apply on the go</h4>
+                <p>Get real-time job updates on our App</p>
+                <a href="https://play.google.com/store/apps/details?id=naukriApp.appModules.login&hl=en&utm_source=naukri&utm_medium=footer">
+                    <img src="https://static.naukimg.com/s/0/0/i/new-homepage/android-app.png" alt="">
+                </a>
+                <a href="https://apps.apple.com/in/app/naukri-com-job-search/id482877505">
+                    <img src="https://static.naukimg.com/s/0/0/i/new-homepage/ios-app.png" alt="">
+                </a>
+
+            </div>
+
+        </div>
+
 
 
         
@@ -1607,10 +1722,33 @@
             event.preventDefault();
             window.open("https://www.ambitionbox.com/interviews?utm_source=naukri&utm_medium=desktop&utm_campaign=nonlogged_homepage")
          }
+         document.querySelector("#facebook").addEventListener("click",facebook);
+         function facebook(event){
+            event.preventDefault();
+            window.open("https://www.facebook.com/Naukri");
+         }
+         document.querySelector("#insta").addEventListener("click",Instagram);
+         function Instagram(event){
+            event.preventDefault();
+            window.open("https://www.instagram.com/naukridotcom/");
+         }
+         document.querySelector("#twiter").addEventListener("click",twiter);
+         function twiter(event){
+            event.preventDefault();
+            window.open("https://twitter.com/naukri");
+         }
+         document.querySelector("#linkedin").addEventListener("click",linkedin);
+         function linkedin(event){
+            event.preventDefault();
+            window.open("https://www.linkedin.com/company/naukri.com");
+         }
 
         
 
     </script>
+    
+        
+       </div>
     
 </body>
 </html>
